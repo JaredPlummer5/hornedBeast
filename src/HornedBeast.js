@@ -7,7 +7,7 @@ function HornedBeast(props) {
             <h2>{props.title}</h2>
             <p>{props.description}</p>
 
-            <img src={props.image} width="800px" height = "600px" alt = {props.description}/>
+            <img src={props.image} width="800px" height = "600px" alt ={props.description}/>
 
             
 
