@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 
+{/*This function creates the footer tag under at the bottom of my page */ }
 function Footer() {
-  return (
-    <footer>This is the footer</footer>
-  );
+    return (
+        <footer>
+
+            Author: Jared Plummer
+        </footer>
+    );
 }
 
 export default Footer;
