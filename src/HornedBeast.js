@@ -9,6 +9,7 @@ function HornedBeast(props) {
             <img src={props.image}></img>
 
 
+
         </div>
     );
 }
