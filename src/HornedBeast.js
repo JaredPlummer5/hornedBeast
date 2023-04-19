@@ -1,17 +1,29 @@
 import './App.css';
+import { useState } from 'react';
+import { Card, Button } from 'react-bootstrap'
+
 // The HornedBeast function returns a div that passes the title, description, and the image url from the Main.js file
 // Props is a prameter that gets passed to represent the HornedBeast tag
 function HornedBeast(props) {
+    const [clicks, setClicks] = useState(0);
+
+    function state() {
+        setClicks(clicks + 1);
+        console.log(clicks);
+    }
+
     return (
-        <div>
+        <Card id={props.id} style={{ width: '18rem' }}>
+
             <h2>{props.title}</h2>
             <p>{props.description}</p>
 
-            <img src={props.image} width="800px" height = "600px" alt ={props.description}/>
+            <img src={props.image} class="mw-100" height={'200px'} alt={props.description} />
+            <Button onClick={state}>Like</Button>
+            <p>&#9829;{clicks}</p>
 
-            
+        </Card>
 
-        </div>
     );
 };
 
