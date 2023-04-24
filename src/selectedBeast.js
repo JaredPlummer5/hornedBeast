@@ -1,10 +1,11 @@
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import HornedBeast from "./HornedBeast";
+import 'bootstrap/dist/css/bootstrap.min.css'
+//import HornedBeast from "./HornedBeast";
 import { useState } from "react";
 //Import the Modal and Button components from the react-bootstrap library, and the useState hook from React.
 function SelectedBeast(props) {
-    const [show, setShow] = useState(props.clickedBeastVariable);
+    const [show, setShow] = useState(true);
     //Define the JSX for the modal, passing in the clickedBeastVariable and updateFunction as props from the Main.jd file.
 
 
@@ -25,7 +26,7 @@ function SelectedBeast(props) {
             the show state variable and an onHide property bound to the handleClose function. */}
                 <Modal.Header closeButton>
                     {/* renders a header component for the modal with a close button. */}
-                    <Modal.Title class="d-flex justify-content-center">{show.title}</Modal.Title>
+                    <Modal.Title class="d-flex justify-content-center">{props.clickedBeastVariable.title}</Modal.Title>
                     {/* renders the title of the modal with the title property of the show state variable. */}
 
                 </Modal.Header>

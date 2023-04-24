@@ -12,9 +12,7 @@ function Main(props) {
         // which centers the container and wraps the items within the container in a flexbox layout. 
         // This component maps over the BeastData array and renders a HornedBeast component for each item in the array.
         <div class="d-flex justify-content-center flex-wrap">
-
             {/* This declares the atributes for the each HornedBeast tag*/}
-
             {BeastData.map(Beast => {
                 return (
                     //Map through the array of beasts in the data file and 
@@ -22,6 +20,7 @@ function Main(props) {
                     //passing in the necessary props including SelectedBeastFunction, updateFunction, and clickedBeastVariable.
 
                     <HornedBeast
+
                     clicks={0}
                     // A state variable that tracks the number of times the user has clicked on the "Like" button for this beast.
                     key={Beast._id}
