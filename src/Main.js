@@ -5,7 +5,7 @@ import HornedBeast from './HornedBeast';
 // This function sets the attributes for the props object on the Main.js file 
 
 
-function Main(props) {
+function Main() {
 
     return (
         // Defining the Main component that renders a container with d-flex justify-content-center flex-wrap class, 
@@ -18,8 +18,7 @@ function Main(props) {
             {BeastData.map(Beast => {
                 return (
                     //Map through the array of beasts in the data file and 
-                    //create a HornedBeast component for each one, 
-                    //passing in the necessary props including SelectedBeastFunction, updateFunction, and clickedBeastVariable.
+                    //create a HornedBeast component for each one
 
                     <HornedBeast
                     clicks={0}
@@ -34,14 +33,7 @@ function Main(props) {
                     // The description of the beast from the BeastData array.
                     image={Beast.image_url}
                     //The image URL of the beast from the BeastData array.
-                    updateFunction={props.updateFunction}
-                    //A function that sets the displaySelectedBeast state in the App component when the user clicks on the image of a beast.
-                    SelectedBeastFunction={props.SelectedBeastFunction}
-                    // SelectedBeastFunction: A function that sets the clickedBeast state in the App component when the user clicks on the image of a beast.
-                    clickedBeastVariable={Beast}
-                    //The Beast object from the BeastData array that corresponds to this HornedBeast component. 
-                    //This is used to populate the selectedBeast state in the 
-                    //App component when the user clicks on the image of a beast.
+                   
                     />
 
                 );

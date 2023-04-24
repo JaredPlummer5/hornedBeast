@@ -24,12 +24,6 @@ function HornedBeast(props) {
             <p>{props.description}</p>
 
             <img
-                //When the image is clicked, call the SelectedBeastFunction and updateFunction to set the clicked beast in the App state.
-                onClick={() => {
-                    props.updateFunction(true);
-                    props.SelectedBeastFunction(props.clickedBeastVariable);
-                }
-                }
                 // This lines gets the image and description from that are being passed down as props from the Main.js file 
                 src={props.image} class="mw-100" height={'200px'}
                 alt={props.description}
