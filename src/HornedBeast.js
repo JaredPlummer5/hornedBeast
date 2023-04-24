@@ -39,6 +39,7 @@ function HornedBeast(props) {
             {/* This line displays a heart and the state of clicks for each beast */}
             <p>&#9829;{clicks}</p>
 
+
         </Card>
 
     );

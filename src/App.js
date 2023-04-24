@@ -27,7 +27,6 @@ function App() {
         <div className="App">
             <Header />
             {selectedBeastHtml}
-
             <Main SelectedBeastFunction={setClickedBeast} clickedBeastVariable={clickedBeast} updateFunction={setDisplaySelectedBeast} />
             <Footer />
         </div>
