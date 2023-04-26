@@ -51,3 +51,15 @@ Start time: _12pm____
 Finish time: __5pm___
 
 Actual time needed to complete: __5 hours___
+
+## Lab 04
+
+Number and name of feature: __________feature 1________Add a select bar______________
+
+Estimate of time needed to complete: __5 hours___
+
+Start time: _12pm____
+
+Finish time: __2pm___
+
+Actual time needed to complete: __2 hours___

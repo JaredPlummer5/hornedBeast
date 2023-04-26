@@ -11,7 +11,6 @@ function HornedBeast(props) {
     const [clicks, setClicks] = useState(0);
     function state() {
         setClicks(clicks + 1);
-        console.log(clicks);
     }
     //Defined a state variable to keep track of how many times the "Like" button has been clicked.
 
@@ -31,7 +30,7 @@ function HornedBeast(props) {
                 }
                 }
                 // This lines gets the image and description from that are being passed down as props from the Main.js file 
-                src={props.image} class="mw-100" height={'200px'}
+                src={props.image} className="mw-100" height={'200px'}
                 alt={props.description}
             />
             {/* This lines update the state of likes by calling the state function */}

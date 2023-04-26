@@ -26,13 +26,13 @@ function SelectedBeast(props) {
             the show state variable and an onHide property bound to the handleClose function. */}
                 <Modal.Header closeButton>
                     {/* renders a header component for the modal with a close button. */}
-                    <Modal.Title class="d-flex justify-content-center">{props.clickedBeastVariable.title}</Modal.Title>
+                    <Modal.Title className="d-flex justify-content-center">{props.clickedBeastVariable.title}</Modal.Title>
                     {/* renders the title of the modal with the title property of the show state variable. */}
 
                 </Modal.Header>
-                <Modal.Body class="d-flex justify-content-center flex-wrap" >
+                <Modal.Body className="d-flex justify-content-center flex-wrap" >
                     {/* renders the body of the modal. */}
-                    <img class="mw-100" height={'200px'} src={props.clickedBeastVariable.image_url} alt={props.clickedBeastVariable.title} />
+                    <img className="mw-100" height={'200px'} src={props.clickedBeastVariable.image_url} alt={props.clickedBeastVariable.title} />
                     {/* renders an image element with the image_url property of the 
                     props.clickedBeastVariable object passed as a prop to the component. */}
                     <p>{props.clickedBeastVariable.description}</p>

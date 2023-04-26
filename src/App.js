@@ -19,12 +19,14 @@ function App() {
         selectedBeastHtml = <div></div>;
     }
     //Conditionally render the SelectedBeast component based on the displaySelectedBeast state variable.
-
+   
     return (
         //Render the Header, Main, and Footer components, 
         //passing in the setClickedBeast and setDisplaySelectedBeast 
         //functions as props to update the state variables.
+
         <div className="App">
+
             <Header />
             {selectedBeastHtml}
             <Main SelectedBeastFunction={setClickedBeast} clickedBeastVariable={clickedBeast} updateFunction={setDisplaySelectedBeast} />
