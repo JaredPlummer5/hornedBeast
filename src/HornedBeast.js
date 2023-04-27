@@ -16,7 +16,7 @@ function HornedBeast(props) {
 
     //Return a Card component that displays the title, description, image, and Like button. 
     return (
-        <Card id={props.id} style={{ width: '18rem' }}>
+        <Card className={"mx-4 my-4"} id={props.id} style={{ width: '18rem', height: '25rem' }}>
 
             <h2>{props.title}</h2>
             {/* This lines gets the title and description from that are being passed down as props from the Main.js file */}
@@ -34,7 +34,7 @@ function HornedBeast(props) {
                 alt={props.description}
             />
             {/* This lines update the state of likes by calling the state function */}
-            <Button onClick={state}>Like</Button>
+            <Button onClick={state} type="button" class="btn btn-outline-primary">Like</Button>
             {/* This line displays a heart and the state of clicks for each beast */}
             <p>&#9829;{clicks}</p>
 

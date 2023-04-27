@@ -17,7 +17,7 @@ function Main(props) {
 
         filteredBeast = BeastData.filter(element => {
 
-            console.log(element.horns, parseInt(shownOption))
+            //console.log(element.horns, parseInt(shownOption))
             if (element.horns === parseInt(shownOption)) {
 
                 return true;
